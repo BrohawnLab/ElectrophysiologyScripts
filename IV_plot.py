@@ -74,7 +74,7 @@ for z in Integer_traces:
 		epoch_mV.append(abf.sweepC[Times[0]])
 
 	for i in epoch_mV:
-		if i==Voltage_Sweep[0]:
+		if i==Voltage_Sweep[0] or Voltage_Sweep[1]:
 			break
 			####Add one to epochs index until the desiresed starting voltage sweep is found in the .abf file##
 		else:
